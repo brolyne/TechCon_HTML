@@ -5,243 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Register for TechCon 2024 - The premier technology conference. Sign up today!">
     <title>Register - TechCon 2024</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>TechCon 2024</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="register.html" class="active">Register</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Register for TechCon 2024</h1>
-                <p>Secure your spot at the most anticipated technology conference of the year</p>
-            </div>
-        </section>
+        <section>
+            <h2>Registration Form</h2>
+            <p>Secure your spot at the most anticipated technology conference of the year</p>
+            
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
 
-        <section class="register-section">
-            <div class="container">
-                <div class="registration-content">
-                    <div class="form-container">
-                        <h2>Registration Form</h2>
-                        <form id="registrationForm" action="#" method="POST">
-                            <fieldset>
-                                <legend>Personal Information</legend>
-                                
-                                <div class="form-group">
-                                    <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="company">Company/Organization</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="jobTitle">Job Title</label>
-                                    <input type="text" id="jobTitle" name="jobTitle">
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Ticket Information</legend>
-
-                                <div class="form-group">
-                                    <label for="ticketType">Ticket Type *</label>
-                                    <select id="ticketType" name="ticketType" required>
-                                        <option value="">-- Select a ticket type --</option>
-                                        <option value="standard">Standard Pass - $299 (Full 3-Day Conference)</option>
-                                        <option value="premium">Premium Pass - $499 (Full Conference + VIP Networking)</option>
-                                        <option value="day1">Single Day Pass - Day 1 - $149</option>
-                                        <option value="day2">Single Day Pass - Day 2 - $149</option>
-                                        <option value="day3">Single Day Pass - Day 3 - $149</option>
-                                        <option value="student">Student Pass - $99 (Full 3-Day Conference)</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="quantity">Number of Tickets *</label>
-                                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Interests & Preferences</legend>
-
-                                <div class="form-group">
-                                    <p>Which topics are you most interested in? (Select all that apply)</p>
-                                    <div class="checkbox-group">
-                                        <div>
-                                            <input type="checkbox" id="ai" name="interests" value="ai">
-                                            <label for="ai">Artificial Intelligence & Machine Learning</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="cloud" name="interests" value="cloud">
-                                            <label for="cloud">Cloud Computing</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
-                                            <label for="cybersecurity">Cybersecurity</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="devops" name="interests" value="devops">
-                                            <label for="devops">DevOps & Infrastructure</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="web3" name="interests" value="web3">
-                                            <label for="web3">Web3 & Blockchain</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="quantum" name="interests" value="quantum">
-                                            <label for="quantum">Quantum Computing</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="entrepreneurship" name="interests" value="entrepreneurship">
-                                            <label for="entrepreneurship">Entrepreneurship & Startups</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="careers" name="interests" value="careers">
-                                            <label for="careers">Career Development</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <p>Dietary Restrictions/Preferences</p>
-                                    <div class="radio-group">
-                                        <div>
-                                            <input type="radio" id="dietNone" name="dietary" value="none" checked>
-                                            <label for="dietNone">None</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="dietVegan" name="dietary" value="vegan">
-                                            <label for="dietVegan">Vegan</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="dietVegetarian" name="dietary" value="vegetarian">
-                                            <label for="dietVegetarian">Vegetarian</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="dietGluten" name="dietary" value="glutenFree">
-                                            <label for="dietGluten">Gluten-Free</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="specialRequests">Special Requests or Questions</label>
-                                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Let us know if you have any special requirements or questions..."></textarea>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
-                                <legend>Terms & Conditions</legend>
-
-                                <div class="form-group checkbox">
-                                    <input type="checkbox" id="terms" name="terms" required>
-                                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a> of TechCon 2024 *</label>
-                                </div>
-
-                                <div class="form-group checkbox">
-                                    <input type="checkbox" id="privacy" name="privacy" required>
-                                    <label for="privacy">I agree to the <a href="#">Privacy Policy</a> *</label>
-                                </div>
-
-                                <div class="form-group checkbox">
-                                    <input type="checkbox" id="marketing" name="marketing">
-                                    <label for="marketing">I would like to receive updates and information about future TechCon events</label>
-                                </div>
-                            </fieldset>
-
-                            <div class="form-actions">
-                                <button type="submit" class="submit-button">Complete Registration</button>
-                                <button type="reset" class="reset-button">Clear Form</button>
-                            </div>
-                        </form>
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
                     </div>
 
-                    <aside class="registration-info">
-                        <div class="info-card">
-                            <h3>Ticket Information</h3>
-                            <ul>
-                                <li><strong>Standard Pass:</strong> $299 - Full access to all 3 days</li>
-                                <li><strong>Premium Pass:</strong> $499 - Standard + VIP networking events</li>
-                                <li><strong>Single Day:</strong> $149 - Access to one day</li>
-                                <li><strong>Student:</strong> $99 - Full 3-day pass with valid student ID</li>
-                            </ul>
-                            <p class="note">* Prices shown are per ticket</p>
-                        </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                        <div class="info-card">
-                            <h3>What's Included</h3>
-                            <ul>
-                                <li>✓ Access to all sessions and workshops</li>
-                                <li>✓ Meals and refreshments</li>
-                                <li>✓ Conference materials and swag</li>
-                                <li>✓ Networking events</li>
-                                <li>✓ Exhibition hall access</li>
-                                <li>✓ Digital conference agenda</li>
-                            </ul>
-                        </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
 
-                        <div class="info-card">
-                            <h3>Registration Details</h3>
-                            <p><strong>Conference Dates:</strong> December 15-17, 2024</p>
-                            <p><strong>Location:</strong> Convention Center, Tech City</p>
-                            <p><strong>Early Bird Deadline:</strong> November 30, 2024</p>
-                            <p><strong>Standard Registration Deadline:</strong> December 10, 2024</p>
-                            <p><strong>On-Site Registration:</strong> December 15, 2024 (subject to availability)</p>
-                        </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </fieldset>
 
-                        <div class="info-card">
-                            <h3>Questions?</h3>
-                            <p>If you have any questions about registration, please <a href="contact.html">contact us</a> or email <strong>register@techcon2024.com</strong></p>
+                <fieldset>
+                    <legend>Ticket Information</legend>
+
+                    <div>
+                        <label for="ticketType">Ticket Type:</label>
+                        <select id="ticketType" name="ticketType" required>
+                            <option value="">-- Select a ticket type --</option>
+                            <option value="standard">Standard Pass - $299 (Full 3-Day Conference)</option>
+                            <option value="premium">Premium Pass - $499 (Full Conference + VIP Networking)</option>
+                            <option value="day1">Single Day Pass - Day 1 - $149</option>
+                            <option value="day2">Single Day Pass - Day 2 - $149</option>
+                            <option value="day3">Single Day Pass - Day 3 - $149</option>
+                            <option value="student">Student Pass - $99 (Full 3-Day Conference)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="quantity">Number of Tickets:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests & Preferences</legend>
+
+                    <div>
+                        <p>Which topics are you most interested in? (Select all that apply)</p>
+                        <div>
+                            <input type="checkbox" id="ai" name="interests" value="ai">
+                            <label for="ai">Artificial Intelligence & Machine Learning</label>
                         </div>
-                    </aside>
+                        <div>
+                            <input type="checkbox" id="cloud" name="interests" value="cloud">
+                            <label for="cloud">Cloud Computing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+                            <label for="cybersecurity">Cybersecurity</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="devops" name="interests" value="devops">
+                            <label for="devops">DevOps & Infrastructure</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="web3" name="interests" value="web3">
+                            <label for="web3">Web3 & Blockchain</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="quantum" name="interests" value="quantum">
+                            <label for="quantum">Quantum Computing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="entrepreneurship" name="interests" value="entrepreneurship">
+                            <label for="entrepreneurship">Entrepreneurship & Startups</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="careers" name="interests" value="careers">
+                            <label for="careers">Career Development</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Terms & Conditions</legend>
+
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions of TechCon 2024</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the Privacy Policy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">I would like to receive updates about future TechCon events</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Register Now</button>
+                    <button type="reset">Clear Form</button>
                 </div>
-            </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Ticket Information</h2>
+            <ul>
+                <li><strong>Standard Pass:</strong> $299 - Full access to all 3 days</li>
+                <li><strong>Premium Pass:</strong> $499 - Standard + VIP networking events</li>
+                <li><strong>Single Day:</strong> $149 - Access to one day</li>
+                <li><strong>Student:</strong> $99 - Full 3-day pass with valid student ID</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What's Included</h2>
+            <ul>
+                <li>Access to all sessions and workshops</li>
+                <li>Meals and refreshments</li>
+                <li>Conference materials and swag</li>
+                <li>Networking events</li>
+                <li>Exhibition hall access</li>
+                <li>Digital conference agenda</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Registration Details</h2>
+            <p><strong>Conference Dates:</strong> December 15-17, 2024</p>
+            <p><strong>Location:</strong> Convention Center, Tech City</p>
+            <p><strong>Early Bird Deadline:</strong> November 30, 2024</p>
+            <p><strong>Standard Registration Deadline:</strong> December 10, 2024</p>
+            <p><strong>On-Site Registration:</strong> December 15, 2024 (subject to availability)</p>
+        </section>
+
+        <section>
+            <h2>Questions?</h2>
+            <p>If you have any questions about registration, please <a href="contact.html">contact us</a> or email <strong>register@techcon2024.com</strong></p>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 TechCon. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="contact.html">Contact Us</a>
-                <a href="about.html">About Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+        <div>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
         </div>
     </footer>
 </body>
